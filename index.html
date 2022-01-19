@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#parentBar{
+			margin: auto;
+			height: 100px;
+			width: 520px;
+			line-height: 18px;
+			border: 1px solid #ccc;
+			text-align: center;
+
+		}
+		#unloadingBar{
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 30px;
+			margin-bottom: 10px;
+			position: relative;
+			width: 500px;
+			line-height: 0px;
+			height: 30px;
+			background-color: #E0E0E0;
+			border-radius: 15px;
+		}
+		#loadingBar{
+			position: absolute;
+			width: 5px;
+			line-height: 0px;
+			height: 30px;
+			background-color: #52B155;
+			text-align: center;
+			overflow: hidden;
+			border-radius: 15px;
+		}
+		
+	</style>
+	<title>Problem 3</title>
+</head>
+<body>
+	<div id="parentBar">
+		<div id="unloadingBar">
+			<div id="loadingBar"></div>
+		</div>
+		<button class="btn" type="Button" onclick="clickBtn();">Click me</button>
+	</div>
+	<script type="text/javascript">
+		function loading (pixel) {
+			pixel += 5;
+			let loadingBar = document.querySelector("#loadingBar").style.width = pixel +"px";
+			percent++; 
+			let percentCount = `<p>${percent}%</p>`;
+			document.getElementById("loadingBar").innerHTML = percentCount;
+		}
+		let percent = 0;
+		function clickBtn () {
+			setInterval(function(){
+				if(percent < 100){
+					loading(percent*5);
+				}else{
+					clearInterval(clickBtn);
+				}
+			}, 100);
+			
+		}
+	</script>
+</body>
+</html>
