@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Test For Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="testCode/testCSS.css" rel="stylesheet" type="text/css"/>
+        <script src="testCode/testJS.js" type="text/javascript"></script>
+        <style>
+            h1{
+                font-family: cursive;
+                font-size: 30px;
+                text-align: center;
+                color: lightyellow;
+            }
+            h3{
+                font-family: cursive;
+                font-size: 25px;
+                text-align: center;
+            }
+            p{
+                font-family: cursive;
+                font-size: 20px;
+            }
+            img{
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+       
+        <h1>Welcome to Project A of Paradise Team!</h1>
+        <p> Le Ho Thu Quynh</p>
+        <img src="icon\paradise.jpg" alt="Trulli" width="800" height="450" class="center">
+        <p> What do you want to know about?</p>
+        <!-- Tab links -->
+        <div class="tab">
+            <button class="tablinks" onclick="openInfor(event, 'HTML')">HTML</button>
+            <button class="tablinks" onclick="openInfor(event, 'CSS')">CSS</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="HTML" class="tabcontent">
+            <h3>HyperText Markup Language</h3>
+            <img src="icon\html.png" alt="Trulli" width="800" height="550" class="center">
+            <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            <p>How does it work?</p>
+            <p>Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+            <p>HTML elements:</p>
+            <p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as /image/ and /input/ directly introduce content into the page. Other tags such as /p/ surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.</p>
+            <p>For more information, click <a href="https://en.wikipedia.org/wiki/HTML">here</a>!</p>
+        </div>
+
+        <div id="CSS" class="tabcontent">
+            <h3>Cascading Style Sheets</h3>
+            <img src="icon\css.jpg" alt="Trulli" width="800" height="550" class="center">
+            <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+            <p>Uses of CSS:</P>
+            <p>- CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.</p>
+            <p>- Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.</p>
+            <p>For more information, click <a href="https://en.wikipedia.org/wiki/CSS">here</a>!</p>
+        </div>
+<!--        <button id="btnHTML">HTML</button>|
+        <button id="btnCSS">CSS</button></br>
+        <div id = "content"> </div>-->
+        <!--        <p>The <b>HyperText Markup Language</b>, or <b>HTML</b> is the standard <a href="/wiki/Markup_language" title="Markup language">markup language</a> for documents designed to be displayed in a <a href="/wiki/Web_browser" title="Web browser">web browser</a>. It can be assisted by technologies such as <a href="/wiki/Cascading_Style_Sheets" class="mw-redirect" title="Cascading Style Sheets">Cascading Style Sheets</a> (CSS) and <a href="/wiki/Scripting_language" title="Scripting language">scripting languages</a> such as <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>.
+        </p>-->
+
+        <!--        <script>
+                    function changeContent() {
+                        var txt = "clicked_id";
+                        var ct = document.getElementById("content").innerHTML = "<h1>" + txt + "</h1>";
+                    }
+                    function clickedButton(){
+              
+                    }
+                </script>-->
+
+    </body>
+
+</html>
