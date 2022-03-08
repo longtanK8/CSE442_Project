@@ -1,0 +1,124 @@
+img{
+    max-width: 100%;
+}
+
+.header-content, .footer-content{
+    height: 200px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-content{
+    margin-top: 50px;
+}
+
+.room-title{
+    text-align: center;
+}
+
+.room-img:hover{
+    cursor: pointer;
+}
+
+.closebtn {
+    position: fixed;
+    top: 60px;
+    right: 15%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 91;
+    background-color: transparent !important;
+}
+
+.closebtn:hover{
+    color: red;
+}
+
+.img-expand {
+    position: relative;
+    display: none;
+    max-width: 70%;
+}
+
+#imgtext {
+    position: fixed;
+    bottom: 75px;
+    right: 15%;
+    color: white;
+    font-size: 20px;
+    z-index: 91;
+}
+
+#expandedImg{
+    position: fixed;
+    top: 50px ;
+    max-width: 74%;
+    max-height: 80%;
+    bottom: 50px;
+    left: 13%;
+    right: 13%;
+    color: white;
+    z-index: 90;
+    transition: 1s;
+    animation-name: zoomOut;
+    animation-duration: 1s;
+}
+
+@keyframes zoomOut{
+    from {transform: scale(0.3);}
+    to {transform: scale(1);}
+}
+
+#blackDeep{
+    position: fixed;
+    top: 0px ;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #333;
+    opacity: 0.6;
+    display: none;
+    z-index: 80;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+  
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+.img-part:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.book-part{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
